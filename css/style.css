@@ -533,10 +533,20 @@ a .accent {
   padding-bottom: 60px;
   display: flex;
 }
-.footer .container {
+.footer-container {
   display: flex;
 }
-
+.footer-info {
+  flex-basis: calc((50% - 45px) / 2);
+}
+.footer-join {
+  flex-basis: calc((50% - 45px) / 2);
+  margin-left: 70px;
+}
+.footer-sign-form {
+  flex-basis: calc(50% - 15px);
+  margin-left: 93px;
+}
 .logo-footer.link {
   font-family: Raleway, sans-serif;
   font-weight: bold;
@@ -545,7 +555,6 @@ a .accent {
   letter-spacing: 0.03em;
   color: var(--accent-white-color);
   align-self: center;
-  margin-right: 70px;
   display: block;
   margin-bottom: 20px;
 }
@@ -553,7 +562,6 @@ a .accent {
   font-style: normal;
   color: var(--accent-white-color);
   margin-bottom: 9px;
-  margin-right: 70px;
 }
 .footer-link-adress {
   font-style: normal;
@@ -567,9 +575,6 @@ a .accent {
   color: var(--accent-blue-color);
 }
 /*=== JOIN ===*/
-.join {
-  margin-right: 93px;
-}
 .join-text {
   text-transform: uppercase;
   font-weight: bold;
@@ -578,7 +583,6 @@ a .accent {
 .join-list {
   display: flex;
   align-items: center;
-  justify-content: center;
   margin-top: 16px;
 }
 .join-item:not(:last-child) {
@@ -799,7 +803,9 @@ a .accent {
 .modal-form-checkbox-input:checked + .modal-form-checkbox-agree .icon-check-wrapper {
   opacity: 1;
 }
-
+.modal-form-checkbox-input:focus + .modal-form-checkbox-agree {
+  border-color: var(--accent-blue-color);
+}
 .modal-form-link {
   color: var(--accent-blue-color);
 }
