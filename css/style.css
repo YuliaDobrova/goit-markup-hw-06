@@ -502,7 +502,8 @@ a .accent {
   line-height: 1.55;
   color: var(--accent-white-color);
 }
-.project-link:hover .project-overlay {
+.project-link:hover .project-overlay,
+.project-link:focus .project-overlay {
   transform: translateY(0);
 }
 .project-name {
@@ -521,7 +522,8 @@ a .accent {
 .project-text {
   color: var(--primary-text-color);
 }
-.project-link:hover .project-name {
+.project-link:hover .project-name,
+.project-link:focus .project-name {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 /* === END PROJECTS === */
@@ -649,7 +651,6 @@ a .accent {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 29px;
-  padding-right: auto;
   text-align: start;
 }
 
